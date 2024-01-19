@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "shiftingwares-villagerconfig-addon",
+	"version": "${version}",
+	"name": "Shifting-Wares: VillagerConfig Addon",
+	"description": "Compatibility addon for ShiftingWares and VillagerConfig",
+	"authors": [
+		"Estecka"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/shiftingwares-villagerconfig-addon",
+		"sources": "https://github.com/Estecka/mc-ShiftingWares-VillagerConfig-addon"
+	},
+	"license": "GNU AGPLv3",
+	"icon": "assets/shifting-wares/villagerconfig-addon.png",
+	"custom": {
+		"modmenu":{
+			"parent": "shifting-wares"
+		}
+	},
+	"environment": "*",
+	"entrypoints": {
+		"shifting-wares": [
+			"tk.estecka.shiftingwares.villagerconfig.VillagerConfigTradeLayout"
+		]
+	},
+	"mixins": [
+		"shiftingwares-villagerconfig-addon.mixins.json"
+	],
+	"depends": {
+		"shifting-wares": "^2.0",
+		"villagerconfig": "^4.1",
+		"fabricloader": ">=0.15.3",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"minecraft": "^1.20.1"
+	}
+}
