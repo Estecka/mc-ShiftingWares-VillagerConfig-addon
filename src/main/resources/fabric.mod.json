@@ -28,13 +28,13 @@
 		"shiftingwares-villagerconfig-addon.mixins.json"
 	],
 	"depends": {
-		"shifting-wares": "^2.0",
-		"villagerconfig": "^4.1",
-		"fabricloader": ">=0.15.3",
-		"java": ">=17",
-		"fabric-api": "*"
+		"minecraft": "<1.20.5",
+		"shifting-wares": "^2.1.1",
+		"villagerconfig": "^4.1.2",
+		"fabricloader": ">=0.15.11",
+		"java": ">=17"
 	},
-	"suggests": {
-		"minecraft": "^1.20.1"
+	"recommends": {
+		"minecraft": "~1.20.1"
 	}
 }
