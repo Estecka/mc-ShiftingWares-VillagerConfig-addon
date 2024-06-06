@@ -8,13 +8,13 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import net.minecraft.entity.Entity;
-import net.minecraft.item.FilledMapItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.loot.context.LootContext;
 import net.minecraft.loot.context.LootContextParameters;
 import net.minecraft.loot.function.ExplorationMapLootFunction;
 import net.minecraft.registry.tag.TagKey;
 import net.minecraft.world.gen.structure.Structure;
+import tk.estecka.shiftingwares.MapTradesCache;
 import tk.estecka.shiftingwares.api.IHasItemCache;
 import tk.estecka.shiftingwares.api.PersistentItemCache;
 import tk.estecka.shiftingwares.villagerconfig.StructureKeys;
@@ -35,7 +35,7 @@ public abstract class ExplorationMapLootFunctionMixin
 		var cachedMap = PersistentItemCache.Resell(entity, cacheKey);
 		if (cachedMap.isPresent()){
 			stack = cachedMap.get();
-			SwVcAddon.LOGGER.info("Reselling previously available map #{} @ {}", FilledMapItem.getMapId(stack), cacheKey);
+			SwVcAddon.LOGGER.info("Reselling previously available map #{} @ {}", MapTradesCache.GetRawMapId(stack), cacheKey);
 			info.setReturnValue(stack);
 		}
 	}

@@ -6,7 +6,8 @@ import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import net.minecraft.item.map.MapIcon;
+import net.minecraft.item.map.MapDecorationType;
+import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.registry.tag.TagKey;
 import net.minecraft.village.TradeOffers.SellMapFactory;
 import net.minecraft.world.gen.structure.Structure;
@@ -19,7 +20,7 @@ public abstract class SellMapFactoryMixin
 	@Shadow @Final private TagKey<Structure> structure;
 
 	@Inject( method="<init>", at=@At("TAIL"))
-	private void	RegisterStructure(int price, TagKey<Structure> structure, String namekey, MapIcon.Type icon, int maxUses, int experience, CallbackInfo info){
+	private void	RegisterStructure(int price, TagKey<Structure> structure, String namekey, RegistryEntry<MapDecorationType> icon, int maxUses, int experience, CallbackInfo info){
 		StructureKeys.RegisterStructure(this.structure, this.nameKey);
 	}
 }
