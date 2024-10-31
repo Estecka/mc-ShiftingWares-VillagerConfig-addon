@@ -3,7 +3,7 @@
 	"package": "tk.estecka.shiftingwares.villagerconfig.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"ExplorationMapLootFunctionMixin",
+		"BehaviorTradeMixin",
 		"ITradeTableMixin",
 		"ITradeTierMixin",
 		"SellMapFactoryMixin"
