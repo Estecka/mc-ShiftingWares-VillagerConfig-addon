@@ -27,17 +27,6 @@ implements IShiftingTradeFactory
 	@Override public boolean shiftingwares$IsItemPersistent(){ return this.isPersistent; }
 	@Override public Identifier shiftingwares$GetTradeId(){ return this.tradeId; }
 
-	// @ModifyArg( method="<clinit>", remap=false, at=@At(value="INVOKE", target="com/mojang/serialization/codecs/RecordCodecBuilder.create(Ljava/util/function/Function;)Lcom/mojang/serialization/Codec;") )
-	// static private Function<RecordCodecBuilder.Instance<BehaviorTrade>, ? extends App<RecordCodecBuilder.Mu<BehaviorTrade>, BehaviorTrade>> AddShiftingData(
-	// 	Function<RecordCodecBuilder.Instance<BehaviorTrade>, ? extends App<RecordCodecBuilder.Mu<BehaviorTrade>, BehaviorTrade>> original
-	// ){
-	// 	return builder -> builder.group(
-	// 		RecordCodecBuilder.mapCodec(original).forGetter(Function.identity()),
-	// 		Codec.BOOL.fieldOf("shiftingwares:isPersistent").orElse(false).forGetter(trade->IShiftingTradeFactory.Of(trade).shiftingwares$IsItemPersistent())
-	// 	)
-	// 	.apply(builder, BehaviorTradeMixin::ShiftingDataInit);
-	// }
-
 	@ModifyExpressionValue( method="<clinit>", remap=false, at=@At(value="INVOKE", target="com/mojang/serialization/codecs/RecordCodecBuilder.create(Ljava/util/function/Function;)Lcom/mojang/serialization/Codec;") )
 	static private Codec<BehaviorTrade> AddShiftingData(Codec<BehaviorTrade> original){
 		return RecordCodecBuilder.create(builder -> 
@@ -54,12 +43,6 @@ implements IShiftingTradeFactory
 		BehaviorTradeMixin originalMixin = (BehaviorTradeMixin)(Object)original;
 		originalMixin.isPersistent = isPersistent;
 		originalMixin.tradeId = tradeId.orElse(null);
-		return original;
-	}
-
-	@ModifyReturnValue( method="create", at=@At("RETURN"))
-	private TradeOffer ShiftingDataInit(TradeOffer original){
-		ShiftingTradeData.InitializeTrade(original, this);
 		return original;
 	}
 

@@ -9,5 +9,5 @@ import me.drex.villagerconfig.data.TradeTier;
 @Mixin(TradeTier.class)
 public interface ITradeTierMixin
 {
-	@Accessor List<TradeGroup>	getGroups();
+	@Accessor(remap=false) List<TradeGroup>	getGroups();
 }

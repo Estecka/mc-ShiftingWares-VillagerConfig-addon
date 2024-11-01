@@ -8,5 +8,5 @@ import me.drex.villagerconfig.data.TradeTier;
 @Mixin(TradeTable.class)
 public interface ITradeTableMixin
 {
-	@Invoker TradeTier	callGetTradeTier(int level);
+	@Invoker(remap=false) TradeTier	callGetTradeTier(int level);
 }
