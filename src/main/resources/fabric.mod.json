@@ -12,7 +12,7 @@
 		"sources": "https://github.com/Estecka/mc-ShiftingWares-VillagerConfig-addon",
 		"issues":  "https://github.com/Estecka/mc-ShiftingWares-VillagerConfig-addon/issues"
 	},
-	"license": "GNU AGPLv3",
+	"license": "MIT",
 	"icon": "assets/shifting-wares/villagerconfig-addon.png",
 	"custom": {
 		"modmenu":{
