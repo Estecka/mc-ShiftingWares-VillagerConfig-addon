@@ -1,4 +1,4 @@
-package tk.estecka.shiftingwares.villagerconfig.mixin;
+package fr.estecka.shiftingwares.villagerconfig.mixin;
 
 import java.util.List;
 import org.spongepowered.asm.mixin.Mixin;

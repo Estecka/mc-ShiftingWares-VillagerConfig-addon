@@ -1,4 +1,4 @@
-package tk.estecka.shiftingwares.villagerconfig.mixin;
+package fr.estecka.shiftingwares.villagerconfig.mixin;
 
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.gen.Invoker;

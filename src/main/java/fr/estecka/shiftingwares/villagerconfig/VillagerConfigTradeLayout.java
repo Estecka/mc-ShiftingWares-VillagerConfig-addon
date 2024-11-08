@@ -1,4 +1,4 @@
-package tk.estecka.shiftingwares.villagerconfig;
+package fr.estecka.shiftingwares.villagerconfig;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,8 +10,8 @@ import net.minecraft.village.VillagerData;
 import net.minecraft.village.VillagerProfession;
 import net.minecraft.village.TradeOffers.Factory;
 import fr.estecka.shiftingwares.api.ITradeLayoutProvider;
-import tk.estecka.shiftingwares.villagerconfig.mixin.ITradeTableMixin;
-import tk.estecka.shiftingwares.villagerconfig.mixin.ITradeTierMixin;
+import fr.estecka.shiftingwares.villagerconfig.mixin.ITradeTableMixin;
+import fr.estecka.shiftingwares.villagerconfig.mixin.ITradeTierMixin;
 
 public class VillagerConfigTradeLayout
 implements ITradeLayoutProvider

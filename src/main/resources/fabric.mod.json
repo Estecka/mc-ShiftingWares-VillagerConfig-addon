@@ -22,7 +22,7 @@
 	"environment": "*",
 	"entrypoints": {
 		"shifting-wares": [
-			"tk.estecka.shiftingwares.villagerconfig.VillagerConfigTradeLayout"
+			"fr.estecka.shiftingwares.villagerconfig.VillagerConfigTradeLayout"
 		]
 	},
 	"mixins": [

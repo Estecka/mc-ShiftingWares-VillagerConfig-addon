@@ -1,4 +1,4 @@
-package tk.estecka.shiftingwares.villagerconfig;
+package fr.estecka.shiftingwares.villagerconfig;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -1,4 +1,4 @@
-package tk.estecka.shiftingwares.villagerconfig.mixin;
+package fr.estecka.shiftingwares.villagerconfig.mixin;
 
 import java.util.Optional;
 import java.util.function.Function;
