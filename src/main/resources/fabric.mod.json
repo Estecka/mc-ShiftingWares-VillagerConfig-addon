@@ -9,7 +9,8 @@
 	],
 	"contact": {
 		"homepage": "https://modrinth.com/mod/shiftingwares-villagerconfig-addon",
-		"sources": "https://github.com/Estecka/mc-ShiftingWares-VillagerConfig-addon"
+		"sources": "https://github.com/Estecka/mc-ShiftingWares-VillagerConfig-addon",
+		"issues":  "https://github.com/Estecka/mc-ShiftingWares-VillagerConfig-addon/issues"
 	},
 	"license": "GNU AGPLv3",
 	"icon": "assets/shifting-wares/villagerconfig-addon.png",
@@ -28,10 +29,9 @@
 		"shiftingwares-villagerconfig-addon.mixins.json"
 	],
 	"depends": {
-		"minecraft": "^1.20.5",
-		"shifting-wares": "^2.1.1",
+		"shifting-wares": "^3",
 		"villagerconfig": "^4.1.2",
-		"fabricloader": ">=0.15.11",
+		"fabricloader": ">=0.16.9",
 		"java": ">=21"
 	}
 }

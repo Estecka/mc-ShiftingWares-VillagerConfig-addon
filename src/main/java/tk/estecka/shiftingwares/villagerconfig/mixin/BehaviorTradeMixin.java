@@ -11,7 +11,7 @@ import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import me.drex.villagerconfig.data.BehaviorTrade;
 import net.minecraft.util.Identifier;
-import tk.estecka.shiftingwares.api.IShiftingTradeFactory;
+import fr.estecka.shiftingwares.api.IShiftingTradeFactory;
 
 @Unique
 @Mixin(BehaviorTrade.class)
