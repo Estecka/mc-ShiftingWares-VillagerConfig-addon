@@ -6,14 +6,11 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import com.llamalad7.mixinextras.injector.ModifyExpressionValue;
-import com.llamalad7.mixinextras.injector.ModifyReturnValue;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import me.drex.villagerconfig.data.BehaviorTrade;
 import net.minecraft.util.Identifier;
-import net.minecraft.village.TradeOffer;
-import tk.estecka.shiftingwares.ShiftingTradeData;
 import tk.estecka.shiftingwares.api.IShiftingTradeFactory;
 
 @Unique
