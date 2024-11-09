@@ -1,4 +1,4 @@
-package tk.estecka.shiftingwares.villagerconfig.mixin;
+package fr.estecka.shiftingwares.villagerconfig.mixin;
 
 import java.util.List;
 import org.spongepowered.asm.mixin.Mixin;
@@ -9,5 +9,5 @@ import me.drex.villagerconfig.data.TradeTier;
 @Mixin(TradeTier.class)
 public interface ITradeTierMixin
 {
-	@Accessor List<TradeGroup>	getGroups();
+	@Accessor(remap=false) List<TradeGroup>	getGroups();
 }
