@@ -5,7 +5,7 @@ import java.util.List;
 import me.drex.villagerconfig.VillagerConfig;
 import me.drex.villagerconfig.data.TradeGroup;
 import net.minecraft.entity.passive.VillagerEntity;
-import net.minecraft.registry.Registries;
+import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.village.VillagerData;
 import net.minecraft.village.VillagerProfession;
 import net.minecraft.village.TradeOffers.Factory;
@@ -19,9 +19,9 @@ implements ITradeLayoutProvider
 	public List<Factory[]>	GetTradeLayout(VillagerEntity villager){
 		List<Factory[]> layout = new ArrayList<>();
 
-		final VillagerProfession job = villager.getVillagerData().getProfession();
-		final int jobLevel = villager.getVillagerData().getLevel();
-		final ITradeTableMixin table = (ITradeTableMixin)VillagerConfig.TRADE_MANAGER.getTrade(Registries.VILLAGER_PROFESSION.getId(job));
+		final RegistryEntry<VillagerProfession> job = villager.getVillagerData().profession();
+		final int jobLevel = villager.getVillagerData().level();
+		final ITradeTableMixin table = (ITradeTableMixin)VillagerConfig.TRADE_MANAGER.getTrade(job.getKey().get().getValue());
 
 		if (table == null){
 			SwVcAddon.LOGGER.warn("No trade table for job {}", job);
