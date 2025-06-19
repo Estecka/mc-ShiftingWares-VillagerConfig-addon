@@ -2,8 +2,8 @@ package fr.estecka.shiftingwares.villagerconfig;
 
 import java.util.ArrayList;
 import java.util.List;
-import me.drex.villagerconfig.VillagerConfig;
-import me.drex.villagerconfig.data.TradeGroup;
+import me.drex.villagerconfig.common.VillagerConfig;
+import me.drex.villagerconfig.common.data.TradeGroup;
 import net.minecraft.entity.passive.VillagerEntity;
 import net.minecraft.registry.Registries;
 import net.minecraft.village.VillagerData;
