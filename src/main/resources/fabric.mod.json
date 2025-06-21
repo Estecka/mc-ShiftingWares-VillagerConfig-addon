@@ -7,6 +7,9 @@
 	"authors": [
 		"Estecka"
 	],
+	"contributors": [
+		"DrexHD"
+	],
 	"contact": {
 		"homepage": "https://modrinth.com/mod/shiftingwares-villagerconfig-addon",
 		"sources": "https://github.com/Estecka/mc-ShiftingWares-VillagerConfig-addon",
@@ -30,7 +33,7 @@
 	],
 	"depends": {
 		"shifting-wares": "^3",
-		"villagerconfig": ">=4.1 <4.4",
+		"villagerconfig": "^4.4",
 		"minecraft": "^1.21.5",
 		"fabricloader": ">=0.16.9",
 		"java": ">=21"

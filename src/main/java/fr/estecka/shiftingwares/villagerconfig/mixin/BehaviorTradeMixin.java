@@ -9,7 +9,7 @@ import com.llamalad7.mixinextras.injector.ModifyExpressionValue;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import me.drex.villagerconfig.data.BehaviorTrade;
+import me.drex.villagerconfig.common.data.BehaviorTrade;
 import net.minecraft.util.Identifier;
 import fr.estecka.shiftingwares.api.IShiftingTradeFactory;
 
